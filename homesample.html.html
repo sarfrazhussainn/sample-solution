@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="web_standard" name="shell-type">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet">
+    <style>
+        @layer base {
+
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                overscroll-behavior: none;
+            }
+
+            main> :first-child {
+                margin-top: 0 !important;
+            }
+
+            main> :last-child {
+                margin-bottom: 0 !important;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface": "#0b1c32", "surface-container-low": "#f0f3ff", "primary-fixed-dim": "#b1c7f0", "primary-fixed": "#d5e3ff", "inverse-on-surface": "#ebf1ff", "on-tertiary": "#ffffff", "on-primary-fixed-variant": "#314769", "outline-variant": "#c4c6cf", "inverse-surface": "#213148", "surface-container": "#e7eeff", "on-primary": "#ffffff", "tertiary-container": "#3c1d00", "on-primary-fixed": "#001c3b", "outline": "#74777f", "on-tertiary-container": "#d37407", "inverse-primary": "#b1c7f0", "primary-container": "#0b2545", "on-background": "#0b1c32", "surface-container-lowest": "#ffffff", "on-surface-variant": "#44474e", "tertiary-fixed-dim": "#ffb77d", "surface": "#f9f9ff", "secondary-fixed-dim": "#a4c9fb", "secondary-container": "#a7ccfe", "background": "#f9f9ff", "error": "#ba1a1a", "error-container": "#ffdad6", "surface-container-highest": "#d5e3ff", "on-tertiary-fixed-variant": "#6e3900", "tertiary": "#1e0b00", "secondary-fixed": "#d2e4ff", "surface-dim": "#cbdbf9", "on-error": "#ffffff", "surface-container-high": "#dee9ff", "on-secondary-container": "#305681", "secondary": "#3b608c", "surface-tint": "#495f82", "tertiary-fixed": "#ffdcc3", "on-error-container": "#93000a", "on-primary-container": "#778db2", "primary": "#001026", "on-tertiary-fixed": "#2f1500", "surface-bright": "#f9f9ff", "on-secondary-fixed": "#001c37", "on-secondary-fixed-variant": "#214873", "on-secondary": "#ffffff", "surface-variant": "#d5e3ff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-md": "1rem", "gutter-mobile": "1rem", "gutter": "1.5rem", "space-lg": "1.5rem", "margin-mobile": "1.25rem", "space-xl": "2.5rem", "space-sm": "0.5rem", "margin": "3rem", "space-xs": "0.25rem" }, "fontFamily": { "body-sm": ["Inter"], "label-caps": ["Inter"], "body-lg": ["Inter"], "display-mobile": ["Inter"], "headline-sm": ["Inter"], "label-code": ["Inter"], "headline-lg-mobile": ["Inter"], "headline-md": ["Inter"], "display": ["Inter"], "headline-lg": ["Inter"], "body-md": ["Inter"], "title-md": ["Inter"] }, "fontSize": { "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }], "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "700" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }], "display-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "600" }], "label-code": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "display": ["52px", { "lineHeight": "60px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }] } } } };</script>
+</head>
+
+<body class="bg-surface font-body-md text-body-md text-on-surface antialiased">
+    <header class="fixed top-0 w-full z-50 shadow-[0_2px_8px_rgba(11,37,69,0.06)]">
+        <div class="bg-primary-container text-on-primary border-b border-outline/20">
+            <div class="max-w-7xl mx-auto px-6 h-10 flex items-center justify-between font-label-code text-label-code">
+                <div class="hidden md:flex items-center gap-space-lg text-primary-fixed"><span
+                        class="flex items-center gap-space-xs"><span
+                            class="material-symbols-outlined text-[15px]">call</span>+966 13 361 XXXX</span><span
+                        class="flex items-center gap-space-xs"><span
+                            class="material-symbols-outlined text-[15px]">mail</span>info@samplesolution.com.sa</span><span
+                        class="flex items-center gap-space-xs"><span
+                            class="material-symbols-outlined text-[15px]">location_on</span>Jubail Industrial City,
+                        KSA</span></div>
+                <div class="flex items-center gap-space-md ml-auto md:ml-0">
+                    <div
+                        class="flex items-center gap-space-xs px-2 py-0.5 rounded-lg bg-surface-container-lowest/10 text-on-primary">
+                        <span class="material-symbols-outlined text-[15px] text-emerald-400">chat</span><span
+                            class="font-label-code text-label-code">+966 50 XXX XXXX</span></div><span
+                        class="hidden lg:inline-block text-primary-fixed-dim font-label-code text-label-code">Sat - Thu:
+                        8:00 AM - 6:00 PM</span><button
+                        class="px-2 py-0.5 rounded bg-surface-container-lowest/15 hover:bg-surface-container-lowest/25 text-on-primary font-label-caps text-label-caps transition-colors">EN
+                        | العربية</button>
+                </div>
+            </div>
+        </div>
+        <div class="bg-surface-container-lowest/95 backdrop-blur-md">
+            <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between gap-space-md">
+                <div class="flex items-center gap-space-md shrink-0"><img alt="Sample Solution Ltd Brand Logo"
+                        class="h-8 w-auto object-contain"
+                        src="https://lh3.googleusercontent.com/aida/AEtjO1VePC6z9xrbfzHtA5vVFchK5bOKf69cXjR-dxmsR1DFvwchSkz7eFvc626VKpSxr4Ifr9kI4TD_vFaGwsWP0K1Klrwz1dBKsfj62jHGePwvx12VllrQo3zO6QTd-5cS9Uk-DMSUI9V4bPBo-UEYOYu_OThQhIzGkbRx63zpA0svKhfi0_jN-P0LUxU8r3pBDEuxA8UCIiFnq0FZOBEdS8KxHLEhbiZeVk8YNZESywd_eQ">
+                    <div class="flex flex-col"><span
+                            class="font-headline-sm text-headline-sm tracking-tight text-primary-container uppercase">Sample
+                            Solution</span><span
+                            class="font-label-caps text-label-caps text-on-surface-variant">Contracting &amp; Services
+                            Jubail</span></div>
+                </div>
+                <nav class="hidden xl:flex items-center gap-space-xs font-title-md text-title-md"
+                    data-active-classes="bg-surface-container-high text-primary-container font-semibold rounded-lg"><a
+                        aria-current="page"
+                        class="px-3 py-2 transition-colors bg-surface-container-high text-primary-container font-semibold rounded-lg"
+                        data-path="home" href="#">Home</a>
+                    <div class="relative group"><button
+                            class="px-3 py-2 flex items-center gap-1 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors">Policy<span
+                                class="material-symbols-outlined text-[16px]">expand_more</span></button>
+                        <div
+                            class="absolute left-0 top-full hidden group-hover:flex flex-col w-56 py-2 bg-surface-container-lowest shadow-[0_10px_24px_rgba(11,37,69,0.08)] rounded-xl border border-outline-variant/30">
+                            <a class="px-4 py-2 font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface"
+                                data-path="safety-policy" href="#">Safety Policy</a><a
+                                class="px-4 py-2 font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface"
+                                data-path="quality-policy" href="#">Quality Policy</a></div>
+                    </div>
+                    <div class="relative group"><button
+                            class="px-3 py-2 flex items-center gap-1 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors">Services<span
+                                class="material-symbols-outlined text-[16px]">expand_more</span></button>
+                        <div
+                            class="absolute left-0 top-full hidden group-hover:flex flex-col w-64 py-2 bg-surface-container-lowest shadow-[0_10px_24px_rgba(11,37,69,0.08)] rounded-xl border border-outline-variant/30">
+                            <a class="px-4 py-2 font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface"
+                                data-path="mep-contracting" href="#">MEP Contracting</a><a
+                                class="px-4 py-2 font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface"
+                                data-path="general-construction" href="#">Construction</a><a
+                                class="px-4 py-2 font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface"
+                                data-path="waste-management" href="#">Waste Management</a><a
+                                class="px-4 py-2 font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface"
+                                data-path="support-services" href="#">Support Services</a><a
+                                class="px-4 py-2 font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface"
+                                data-path="transportation" href="#">Transportation</a></div>
+                    </div><a
+                        class="px-3 py-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"
+                        data-path="projects" href="#">Projects</a><a
+                        class="px-3 py-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"
+                        data-path="clients" href="#">Clients</a><a
+                        class="px-3 py-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"
+                        data-path="contact-us" href="#">Contact Us</a>
+                </nav>
+                <div class="flex items-center gap-space-md shrink-0"><a
+                        class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-on-tertiary-container hover:bg-tertiary-fixed-dim text-on-tertiary font-title-md text-title-md shadow-[0_2px_4px_rgba(11,37,69,0.08)] transition-all"
+                        data-path="quote-request" href="#"><span class="text-white font-title-md">Get a
+                            Quote</span><span
+                            class="material-symbols-outlined text-white text-[18px]">arrow_forward</span></a>
+                    <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span
+                            class="material-symbols-outlined text-on-primary text-[18px]">person</span></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="w-full pt-30 bg-surface min-h-[calc(100vh-28rem)]">
+        <div class="flex flex-col w-full">
+            <!-- SECTION 1: HERO BANNER -->
+            <section class="relative w-full overflow-hidden bg-primary -mt-30 pt-30">
+                <div class="relative w-full min-h-[780px] lg:min-h-[860px] flex items-center">
+                    <!-- Background Image with Industrial Double Gradient Overlay -->
+                    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-700 scale-105"
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC3QsNodKZdXURWde0I2c0PBxZzaisH1TGuIFa12200jtxb_2tdwMIOrClFyhXdwg1qPCEL7zF4VYVVJm4wmYTQP-pPR3LsyxuWg0VAKz4vtGwmjPCeGy0l13trDzpbpmeQNTYSn03kr_0DNzj5TrL0FqXx9Zk33XxRY7CBGH_rrBRgSfkalZDa9P_a6-I4ioNqPXgm4J46X0YJO_-nDBg7evXHzCFMtNMosQD6NbuR');">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/85 to-primary/50"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-primary/40"></div>
+                    <!-- Hero Content -->
+                    <div class="relative z-10 max-w-7xl mx-auto px-6 py-20 w-full">
+                        <div class="max-w-3xl flex flex-col gap-6">
+                            <!-- Tagline Pill Badge -->
+                            <div
+                                class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-on-tertiary-container/20 backdrop-blur-md w-fit">
+                                <span
+                                    class="inline-block w-2 h-2 rounded-full bg-on-tertiary-container animate-pulse"></span>
+                                <span
+                                    class="font-label-caps text-label-caps text-tertiary-fixed tracking-wider uppercase">
+                                    Leading Industrial Contractor in Jubail, Saudi Arabia
+                                </span>
+                            </div>
+                            <!-- Main Heading -->
+                            <h1 class="font-display text-display text-on-primary font-extrabold tracking-tight">
+                                Engineering Excellence &amp; Comprehensive Contracting Solutions for Saudi Industry
+                            </h1>
+                            <!-- Subheading -->
+                            <p
+                                class="font-body-lg text-body-lg text-primary-fixed font-normal leading-relaxed max-w-2xl">
+                                Delivering turnkey MEP contracting, heavy industrial construction, certified waste
+                                management, technical support, and logistics across Jubail Industrial City and the
+                                Eastern Province.
+                            </p>
+                            <!-- CTA Buttons -->
+                            <div class="flex flex-wrap items-center gap-4 pt-2">
+                                <a class="inline-flex items-center gap-3 px-7 py-3.5 rounded bg-on-tertiary-container hover:bg-tertiary-fixed-dim text-on-tertiary font-title-md text-title-md shadow-lg transition-transform hover:-translate-y-0.5"
+                                    href="#services">
+                                    <span class="">Our Services</span>
+                                    <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                                </a>
+                                <a class="inline-flex items-center gap-3 px-7 py-3.5 rounded bg-surface-container-lowest/10 hover:bg-surface-container-lowest/20 text-on-primary font-title-md text-title-md backdrop-blur-md transition-all"
+                                    href="#contact">
+                                    <span class="material-symbols-outlined text-[18px]">call</span>
+                                    <span class="">Contact Us</span>
+                                </a>
+                            </div>
+                            <!-- Slide Meta & Progress Dots -->
+                            <div class="pt-8 flex items-center gap-6">
+                                <div class="flex items-center gap-2" id="hero-slider-indicators">
+                                    <button aria-label="Slide 1"
+                                        class="w-10 h-1.5 rounded-full bg-on-tertiary-container transition-all"></button>
+                                    <button aria-label="Slide 2"
+                                        class="w-2.5 h-1.5 rounded-full bg-surface-container-highest/40 hover:bg-surface-container-highest transition-all"></button>
+                                    <button aria-label="Slide 3"
+                                        class="w-2.5 h-1.5 rounded-full bg-surface-container-highest/40 hover:bg-surface-container-highest transition-all"></button>
+                                </div>
+                                <div
+                                    class="font-label-code text-label-code text-primary-fixed-dim flex items-center gap-2">
+                                    <span class="text-on-tertiary font-bold">01</span>
+                                    <span class="">/</span>
+                                    <span class="">03</span>
+                                    <span class="ml-2 text-surface-container-high hidden sm:inline">• Jubail Refinery
+                                        EPC Turnaround</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- SECTION 2: VISION & MISSION OVERLAPPING CARDS -->
+            <section class="relative z-20 w-full max-w-7xl mx-auto px-6 -mt-20 lg:-mt-24">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Vision Card -->
+                    <div
+                        class="bg-surface-container-lowest rounded-xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+                        <div class="flex items-start gap-5">
+                            <div
+                                class="w-14 h-14 rounded-xl bg-on-tertiary-container/10 flex items-center justify-center shrink-0">
+                                <span class="material-symbols-outlined text-on-tertiary-container text-[30px]"
+                                    style="font-variation-settings: 'FILL' 1;">visibility</span>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <span
+                                    class="font-label-caps text-label-caps text-on-tertiary-container uppercase tracking-wider">Strategic
+                                    Directive</span>
+                                <h2 class="font-headline-sm text-headline-sm text-primary-container font-bold">Our
+                                    Vision</h2>
+                                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                    To be the Eastern Province's foremost trusted contracting partner, setting regional
+                                    benchmarks in industrial precision, innovation, and sustainable engineering.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="mt-6 pt-4 flex items-center justify-between text-on-surface-variant font-label-code text-label-code">
+                            <span class="">PILLAR: SUSTAINABLE EXPANSION</span>
+                            <span
+                                class="material-symbols-outlined text-on-tertiary-container text-[18px]">verified</span>
+                        </div>
+                    </div>
+                    <!-- Mission Card -->
+                    <div
+                        class="bg-surface-container-lowest rounded-xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+                        <div class="flex items-start gap-5">
+                            <div
+                                class="w-14 h-14 rounded-xl bg-primary-container/10 flex items-center justify-center shrink-0">
+                                <span class="material-symbols-outlined text-primary-container text-[30px]"
+                                    style="font-variation-settings: 'FILL' 1;">explore</span>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <span
+                                    class="font-label-caps text-label-caps text-secondary font-bold uppercase tracking-wider">Execution
+                                    Standard</span>
+                                <h2 class="font-headline-sm text-headline-sm text-primary-container font-bold">Our
+                                    Mission</h2>
+                                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                    Empowering Saudi Arabia's industrial vision through uncompromising safety,
+                                    world-class MEP execution, and reliable client-centric multi-disciplinary services.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="mt-6 pt-4 flex items-center justify-between text-on-surface-variant font-label-code text-label-code">
+                            <span class="">SAFETY TARGET: ZERO INCIDENTS</span>
+                            <span class="material-symbols-outlined text-secondary text-[18px]">shield</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- SECTION 3: ABOUT US SECTION -->
+            <section class="w-full bg-surface-container-lowest py-24 mt-6">
+                <div class="max-w-7xl mx-auto px-6">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                        <!-- Visual Column (5 Cols) with 2 Overlapping Photos & Experience Badge -->
+                        <div class="lg:col-span-5 relative">
+                            <div class="relative w-full h-[460px] sm:h-[500px]">
+                                <!-- Primary Image -->
+                                <div class="absolute top-0 left-0 w-4/5 h-4/5 rounded-xl overflow-hidden shadow-lg">
+                                    <img alt="Jubail Project Site Operations" class="w-full h-full object-cover"
+                                        data-alt="Certified Saudi industrial construction site engineers in Jubail checking architectural blue-prints near structural pipe racks with heavy lifting cranes, bright sunlight, safety helmets and high visibility vests."
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSQAmbOSEnACN8fzKfC2GvoNTMhqudmwBoMf7OmsChhn94L0i7-14IGSADWTV2qT4Gx2Ttk1IoMX0lqZj8jC6rF4wmsE2n9mEOqMgDEJD8B_ria6fps-9aa_gg9k6Ipb-7s4FOReArWWKEZvkCkk6LpW8x37v-DQ8K7_dZqTbKjCf7REvnGttrrDo4XEVmB7uxGq_kCWbPVfoZjNDzfkpQWsEHR-Yy0sLnLtD8hBTg">
+                                </div>
+                                <!-- Secondary Overlapping Image -->
+                                <div
+                                    class="absolute bottom-0 right-0 w-3/5 h-3/5 rounded-xl overflow-hidden shadow-2xl">
+                                    <img alt="MEP Engineering Precision" class="w-full h-full object-cover"
+                                        data-alt="Heavy electrical switchgear installation and industrial MEP HVAC mechanical piping assembly inside high-tech Jubail processing factory, precise mechanical tooling, clean and modern construction."
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZjd-7gbUHHu19xAaS3FcIS3d7g1FWlBrdjSQeEUzvsQem_UaUfSRjH3lYBJakYWeaZYB0d-tEpRPPOe4n-GvJmPqZZCQZ0alfXwWAVPsKikmhy4WNIY4Anz7ekvlUjoCnsPyQyCY0RIO9bAyyF4xsl_phAEkiLVYXcU-JTSJzu_d8u_kD7rfboQKGJR2IyQ6d3inIX9mmqtXnv2Jvl58ob8vY2h11KKT8EJiW5f2y">
+                                </div>
+                                <!-- Experience Floating Badge -->
+                                <div
+                                    class="absolute top-1/2 left-6 -translate-y-1/2 bg-on-tertiary-container text-on-tertiary p-5 rounded-xl shadow-xl flex flex-col gap-1 max-w-[190px]">
+                                    <span class="font-display text-[42px] leading-none font-extrabold">15+</span>
+                                    <span
+                                        class="font-label-caps text-label-caps uppercase tracking-wider text-surface-bright">Years
+                                        Jubail Industry Leadership</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Copy Column (7 Cols) -->
+                        <div class="lg:col-span-7 flex flex-col gap-6">
+                            <div
+                                class="inline-flex items-center gap-2 px-3 py-1 rounded bg-on-tertiary-container/10 w-fit">
+                                <span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span>
+                                <span
+                                    class="font-label-caps text-label-caps text-on-tertiary-container uppercase tracking-wider font-bold">About
+                                    Sample Solution Ltd</span>
+                            </div>
+                            <h2
+                                class="font-headline-lg text-headline-lg text-primary-container font-extrabold tracking-tight">
+                                Pioneering Heavy Industrial Contracting &amp; Support in Jubail
+                            </h2>
+                            <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                Headquartered in the core of Jubail Industrial City, Sample Solution Ltd has grown as an
+                                integrated industrial service provider aligned with Saudi Vision 2030. We execute
+                                demanding electromechanical, infrastructure, and heavy plant operations with
+                                uncompromising quality.
+                            </p>
+                            <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                Recognized across the Eastern Province for absolute compliance with Saudi Aramco and
+                                SABIC vendor specifications, our registered operations deliver full turnkey project
+                                lifecycles—spanning design coordination, civil erection, industrial MEP maintenance, and
+                                environmental remediation.
+                            </p>
+                            <!-- Core Highlights Matrix -->
+                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 py-2">
+                                <div class="p-4 rounded-xl bg-surface-container flex flex-col gap-1">
+                                    <span
+                                        class="material-symbols-outlined text-on-tertiary-container text-[24px]">verified</span>
+                                    <span class="font-title-md text-title-md text-primary-container font-bold">ISO
+                                        Certified</span>
+                                    <span class="font-label-code text-label-code text-on-surface-variant">9001:2015
+                                        &amp; 45001 Standard</span>
+                                </div>
+                                <div class="p-4 rounded-xl bg-surface-container flex flex-col gap-1">
+                                    <span class="material-symbols-outlined text-secondary text-[24px]">group_work</span>
+                                    <span class="font-title-md text-title-md text-primary-container font-bold">100%
+                                        In-House</span>
+                                    <span class="font-label-code text-label-code text-on-surface-variant">Certified
+                                        Fleet &amp; Manpower</span>
+                                </div>
+                                <div class="p-4 rounded-xl bg-surface-container flex flex-col gap-1">
+                                    <span
+                                        class="material-symbols-outlined text-primary-container text-[24px]">location_city</span>
+                                    <span class="font-title-md text-title-md text-primary-container font-bold">Jubail
+                                        HQ</span>
+                                    <span class="font-label-code text-label-code text-on-surface-variant">Local Quick
+                                        Mobilization</span>
+                                </div>
+                            </div>
+                            <!-- Button -->
+                            <div class="pt-2">
+                                <a class="inline-flex items-center gap-3 px-6 py-3.5 rounded-lg bg-primary-container hover:bg-secondary text-on-primary font-title-md text-title-md shadow-md transition-all"
+                                    href="#company">
+                                    <span class="">About More</span>
+                                    <span
+                                        class="material-symbols-outlined text-on-tertiary-container text-[20px]">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- SECTION 4: SERVICES SLIDER / CARDS (01 TO 05) -->
+            <section class="w-full bg-surface-container-low py-24" id="services">
+                <div class="max-w-7xl mx-auto px-6">
+                    <!-- Section Header with Slider Navigation -->
+                    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-12">
+                        <div class="flex flex-col gap-3 max-w-2xl">
+                            <div
+                                class="inline-flex items-center gap-2 px-3 py-1 rounded bg-surface-container-highest text-primary-container w-fit">
+                                <span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span>
+                                <span class="font-label-caps text-label-caps uppercase tracking-wider font-bold">Our
+                                    Core Capabilities</span>
+                            </div>
+                            <h2
+                                class="font-headline-lg text-headline-lg text-primary-container font-bold tracking-tight">
+                                Integrated Contracting &amp; Industrial Solutions
+                            </h2>
+                            <p class="font-body-md text-body-md text-on-surface-variant">
+                                From single-discipline subcontracts to comprehensive EPC support, we supply verified
+                                engineering solutions adhering to Royal Commission protocols.
+                            </p>
+                        </div>
+                        <!-- Slider Controls -->
+                        <div class="flex items-center gap-3">
+                            <button aria-label="Previous Service"
+                                class="w-12 h-12 rounded-full bg-surface-container-lowest hover:bg-surface-container text-primary-container shadow-md flex items-center justify-center transition-colors"
+                                id="service-prev">
+                                <span class="material-symbols-outlined">arrow_back</span>
+                            </button>
+                            <button aria-label="Next Service"
+                                class="w-12 h-12 rounded-full bg-surface-container-lowest hover:bg-surface-container text-primary-container shadow-md flex items-center justify-center transition-colors"
+                                id="service-next">
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Services Cards Grid / Slider View (3 Visible out of 5 with 4 & 5 indicators) -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Card 01: MEP Contracting -->
+                        <div
+                            class="bg-surface-container-lowest rounded-xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                            <div class="flex flex-col gap-6">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="font-display text-[44px] font-extrabold text-surface-container-highest group-hover:text-primary-container transition-colors">01</span>
+                                    <div
+                                        class="w-12 h-12 rounded-xl bg-on-tertiary-container/10 flex items-center justify-center">
+                                        <span
+                                            class="material-symbols-outlined text-on-tertiary-container text-[26px]">precision_manufacturing</span>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <h3 class="font-headline-sm text-headline-sm text-primary-container font-bold">MEP
+                                        Contracting</h3>
+                                    <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                        Complete Mechanical, Electrical, HVAC, and industrial process piping
+                                        installation engineered to stringent petrochemical standards and schematic
+                                        blueprints.
+                                    </p>
+                                </div>
+                                <div class="flex flex-wrap gap-2 pt-2">
+                                    <span
+                                        class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-code text-label-code">HVAC
+                                        Chillers</span>
+                                    <span
+                                        class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-code text-label-code">Substation
+                                        Cabling</span>
+                                    <span
+                                        class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-code text-label-code">Process
+                                        Piping</span>
+                                </div>
+                            </div>
+                            <div class="mt-8 pt-4">
+                                <a class="inline-flex items-center gap-2 font-title-md text-title-md text-on-tertiary-container hover:text-tertiary font-bold group-hover:translate-x-1 transition-all"
+                                    href="#mep">
+                                    <span class="">Read More</span>
+                                    <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Card 02: General Construction -->
+                        <div
+                            class="bg-surface-container-lowest rounded-xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                            <div class="flex flex-col gap-6">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="font-display text-[44px] font-extrabold text-surface-container-highest group-hover:text-primary-container transition-colors">02</span>
+                                    <div
+                                        class="w-12 h-12 rounded-xl bg-primary-container/10 flex items-center justify-center">
+                                        <span
+                                            class="material-symbols-outlined text-primary-container text-[26px]">domain</span>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <h3 class="font-headline-sm text-headline-sm text-primary-container font-bold">
+                                        General Construction</h3>
+                                    <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                        Civil structural engineering, reinforced foundations, heavy pre-engineered steel
+                                        buildings, and industrial plant enclosure erections.
+                                    </p>
+                                </div>
+                                <div class="flex flex-wrap gap-2 pt-2">
+                                    <span
+                                        class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-code text-label-code">Structural
+                                        Steel</span>
+                                    <span
+                                        class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-code text-label-code">Heavy
+                                        Foundations</span>
+                                    <span
+                                        class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-code text-label-code">Civil
+                                        Works</span>
+                                </div>
+                            </div>
+                            <div class="mt-8 pt-4">
+                                <a class="inline-flex items-center gap-2 font-title-md text-title-md text-primary-container hover:text-on-tertiary-container font-bold group-hover:translate-x-1 transition-all"
+                                    href="#construction">
+                                    <span class="">Read More</span>
+                                    <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Card 03: Waste Management -->
+                        <div
+                            class="bg-surface-container-lowest rounded-xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                            <div class="flex flex-col gap-6">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="font-display text-[44px] font-extrabold text-surface-container-highest group-hover:text-primary-container transition-colors">03</span>
+                                    <div
+                                        class="w-12 h-12 rounded-xl bg-on-tertiary-container/10 flex items-center justify-center">
+                                        <span
+                                            class="material-symbols-outlined text-on-tertiary-container text-[26px]">recycling</span>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <h3 class="font-headline-sm text-headline-sm text-primary-container font-bold">Waste
+                                        Management</h3>
+                                    <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                        Environmentally compliant hazardous and non-hazardous industrial waste haulage,
+                                        chemical remediation, and sustainable recycling streams.
+                                    </p>
+                                </div>
+                                <div class="flex flex-wrap gap-2 pt-2">
+                                    <span
+                                        class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-code text-label-code">RC
+                                        Environmental</span>
+                                    <span
+                                        class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-code text-label-code">Sludge
+                                        Removal</span>
+                                    <span
+                                        class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-code text-label-code">Safe
+                                        Haulage</span>
+                                </div>
+                            </div>
+                            <div class="mt-8 pt-4">
+                                <a class="inline-flex items-center gap-2 font-title-md text-title-md text-on-tertiary-container hover:text-tertiary font-bold group-hover:translate-x-1 transition-all"
+                                    href="#waste">
+                                    <span class="">Read More</span>
+                                    <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Preview Indicators for Cards 04 & 05 -->
+                    <div
+                        class="mt-10 p-5 rounded-xl bg-surface-container flex flex-col md:flex-row items-center justify-between gap-4">
+                        <div class="flex items-center gap-4">
+                            <span
+                                class="font-label-caps text-label-caps bg-primary-container text-on-primary px-2.5 py-1 rounded">ADDITIONAL
+                                SCOPE</span>
+                            <p class="font-body-sm text-body-sm text-on-surface">
+                                Also providing <strong class="text-primary-container">04 Industrial Technical Support
+                                    Services</strong> and <strong class="text-primary-container">05 Heavy Logistics
+                                    &amp; Transport Fleet</strong> for Jubail refineries.
+                            </p>
+                        </div>
+                        <a class="font-title-md text-title-md text-on-tertiary-container hover:underline whitespace-nowrap flex items-center gap-1 font-semibold"
+                            href="#resources">
+                            <span class="">Explore All 5 Modules</span>
+                            <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- SECTION 5: PROJECTS GALLERY -->
+            <section class="w-full bg-surface-container-lowest py-24" id="projects">
+                <div class="max-w-7xl mx-auto px-6">
+                    <!-- Section Header -->
+                    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-8">
+                        <div class="flex flex-col gap-2 max-w-2xl">
+                            <div
+                                class="inline-flex items-center gap-2 px-3 py-1 rounded bg-on-tertiary-container/10 w-fit">
+                                <span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span>
+                                <span
+                                    class="font-label-caps text-label-caps text-on-tertiary-container uppercase tracking-wider font-bold">Proven
+                                    Track Record</span>
+                            </div>
+                            <h2
+                                class="font-headline-lg text-headline-lg text-primary-container font-extrabold tracking-tight">
+                                Featured Landmark Projects in Jubail &amp; Eastern Province
+                            </h2>
+                        </div>
+                        <a class="inline-flex items-center gap-2 px-5 py-2.5 rounded border-2 border-on-tertiary-container text-on-tertiary-container hover:bg-on-tertiary-container hover:text-on-tertiary font-title-md text-title-md transition-colors w-fit"
+                            href="#all-projects">
+                            <span class="">View All Projects</span>
+                            <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+                        </a>
+                    </div>
+                    <!-- Filter Tabs -->
+                    <div class="flex items-center gap-2 overflow-x-auto pb-6">
+                        <button
+                            class="px-4 py-2 rounded-lg bg-primary-container text-on-primary font-title-md text-title-md whitespace-nowrap">All
+                            Projects</button>
+                        <button
+                            class="px-4 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-title-md text-title-md whitespace-nowrap transition-colors">MEP
+                            Contracting</button>
+                        <button
+                            class="px-4 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-title-md text-title-md whitespace-nowrap transition-colors">Civil
+                            &amp; Construction</button>
+                        <button
+                            class="px-4 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-title-md text-title-md whitespace-nowrap transition-colors">Industrial
+                            Services</button>
+                    </div>
+                    <!-- 4-Item Visual Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
+                        <!-- Project 1 -->
+                        <div
+                            class="group relative rounded-xl overflow-hidden shadow-md bg-primary-container min-h-[380px] flex flex-col justify-end">
+                            <img alt="Jubail Commercial Complex MEP"
+                                class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                data-alt="Modern architectural commercial complex MEP central chilled water system, industrial mechanical valves, cooling towers, and ductwork installation in Jubail, clean technical photography."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpjX_ymeb_ZbRCMt0zcMjDMp0EqJv5xZFeY3uV4ny8cr-kNZIuSyF4ULK0fFYlKhVKqTV_w4n-ohNnRxnN5HxbZa5rLYX37fWlSj6mPV_V3Ph6xuHG8PJAu7z_htN_-llceov8d3F4S_NCXrNQaQBK1_7p4upCaZWWVy44zJuEpw_qCOQplIJ5vNuMRXWEivBt1ypsOpk7UoZrA5aVIs3DjXpVrjQAmIepvDBrdEuX">
+                            <div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-transparent">
+                            </div>
+                            <div class="relative z-10 p-6 sm:p-8 flex flex-col gap-3">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="px-2.5 py-1 rounded bg-on-tertiary-container text-on-tertiary font-label-caps text-label-caps uppercase">MEP
+                                        Contracting</span>
+                                    <span
+                                        class="px-2.5 py-1 rounded bg-surface-container-lowest/20 backdrop-blur-md text-on-primary font-label-code text-label-code">Completed</span>
+                                </div>
+                                <h3 class="font-headline-sm text-headline-sm text-on-primary font-bold">
+                                    Jubail Commercial Complex MEP System Installation
+                                </h3>
+                                <div class="flex items-center justify-between pt-2">
+                                    <span class="font-body-sm text-body-sm text-primary-fixed">Client: Royal Commission
+                                        for Jubail</span>
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-surface-container-lowest/15 group-hover:bg-on-tertiary-container flex items-center justify-center text-on-primary transition-colors">
+                                        <span class="material-symbols-outlined text-[20px]">arrow_outward</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project 2 -->
+                        <div
+                            class="group relative rounded-xl overflow-hidden shadow-md bg-primary-container min-h-[380px] flex flex-col justify-end">
+                            <img alt="Petrochemical Refinery Expansion"
+                                class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                data-alt="Heavy steel piping racks and refinery structural expansion framework during sunset inside a major Jubail petrochemical plant, technical steel construction with precision welders at work."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDh5ybFb5jSnmDvZZVrdpCGzcN2WAbviVyP43hgM04Jhhk6gUGJbIRHj9NB2ajHd14Mh4mxfSzfg-QjFtQ6hD07fjO8n8NjGb-TiBusGXxGFIxn5VHz_AsDFKJGiEwa-HUI49ylzmPCT5tRSgjQ9vxKwBiypej3Dsu1LWdz3lM4ue_Qz9g19kQO-IhuPoZne_UmPrL7MgkmJJ5lcWy1xr1ruRkqy222kQxrF5KENPvA">
+                            <div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-transparent">
+                            </div>
+                            <div class="relative z-10 p-6 sm:p-8 flex flex-col gap-3">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="px-2.5 py-1 rounded bg-secondary text-on-secondary font-label-caps text-label-caps uppercase">Civil
+                                        &amp; Construction</span>
+                                    <span
+                                        class="px-2.5 py-1 rounded bg-surface-container-lowest/20 backdrop-blur-md text-on-primary font-label-code text-label-code">Completed</span>
+                                </div>
+                                <h3 class="font-headline-sm text-headline-sm text-on-primary font-bold">
+                                    Petrochemical Refinery Structural Expansion &amp; Piping
+                                </h3>
+                                <div class="flex items-center justify-between pt-2">
+                                    <span class="font-body-sm text-body-sm text-primary-fixed">Client: SABIC Affiliate
+                                        Company</span>
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-surface-container-lowest/15 group-hover:bg-on-tertiary-container flex items-center justify-center text-on-primary transition-colors">
+                                        <span class="material-symbols-outlined text-[20px]">arrow_outward</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project 3 -->
+                        <div
+                            class="group relative rounded-xl overflow-hidden shadow-md bg-primary-container min-h-[380px] flex flex-col justify-end">
+                            <img alt="Waste Treatment Facility"
+                                class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                data-alt="Industrial environmental remediation and hazardous chemical waste containment cells in Jubail Industrial zone, specialized tank trucks, containment berms, and filtration equipment."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLPWHBMDxZCIeKgH2Frl3m9vLbMZcOvLyq4kfHOJdhmfReuMi2ahA0SpdQqcae-k_XL31tIeX12E8fqlvPYIGTmBYx0npfojx7GX42rmBHnzjsqbw1eOAR92lnelMpXnVmcVRULb1f1XQm_bljXpXI78CF9e1yYPa9qTZM2R0soZFOXUoIkQKTtpnukHCeN92a1E_UIwg9JEO-tfifwp9B5Wy_I24LdGE9wnndCuYL">
+                            <div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-transparent">
+                            </div>
+                            <div class="relative z-10 p-6 sm:p-8 flex flex-col gap-3">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="px-2.5 py-1 rounded bg-on-tertiary-container text-on-tertiary font-label-caps text-label-caps uppercase">Waste
+                                        Management</span>
+                                    <span
+                                        class="px-2.5 py-1 rounded bg-surface-container-lowest/20 backdrop-blur-md text-on-primary font-label-code text-label-code">Completed</span>
+                                </div>
+                                <h3 class="font-headline-sm text-headline-sm text-on-primary font-bold">
+                                    Industrial Hazardous Waste Treatment Facility
+                                </h3>
+                                <div class="flex items-center justify-between pt-2">
+                                    <span class="font-body-sm text-body-sm text-primary-fixed">Client: Industrial City
+                                        Development Corp</span>
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-surface-container-lowest/15 group-hover:bg-on-tertiary-container flex items-center justify-center text-on-primary transition-colors">
+                                        <span class="material-symbols-outlined text-[20px]">arrow_outward</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project 4 -->
+                        <div
+                            class="group relative rounded-xl overflow-hidden shadow-md bg-primary-container min-h-[380px] flex flex-col justify-end">
+                            <img alt="Equipment Transport Rig Mobilization"
+                                class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                data-alt="Heavy multi-axle hydraulic transport trailers moving massive oil rig components and heavy turbines through highway corridors in Eastern Province Saudi Arabia, escort vehicles, industrial transport."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLAd-9EX4eG-a4xgm7FN3VhdkwYIRephUze9TqFldQAKwVUB9YYxv6JuWcQFWyc8hc_wJsYLx7Bf0krDIFmIhqor-SfTKJd_UwzrA0BA_onI7dWVAXawlJ9FERezBESScNhGsknV77Du0KtDQIzy9tORvOwR9LtEqxXnd6malanU-njoNWFR49w_HgrQPpemZ1vonUtU-9KY4FFfyOZgGpthxFpfueYqql9yd7d28C">
+                            <div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-transparent">
+                            </div>
+                            <div class="relative z-10 p-6 sm:p-8 flex flex-col gap-3">
+                                <div class="flex items-center justify-between">
+                                    <span
+                                        class="px-2.5 py-1 rounded bg-secondary text-on-secondary font-label-caps text-label-caps uppercase">Logistics
+                                        &amp; Transport</span>
+                                    <span
+                                        class="px-2.5 py-1 rounded bg-on-tertiary-container text-on-tertiary font-label-code text-label-code">Ongoing</span>
+                                </div>
+                                <h3 class="font-headline-sm text-headline-sm text-on-primary font-bold">
+                                    Heavy Equipment Transport &amp; Rig Mobilization
+                                </h3>
+                                <div class="flex items-center justify-between pt-2">
+                                    <span class="font-body-sm text-body-sm text-primary-fixed">Client: EPC Main
+                                        Contractor</span>
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-surface-container-lowest/15 group-hover:bg-on-tertiary-container flex items-center justify-center text-on-primary transition-colors">
+                                        <span class="material-symbols-outlined text-[20px]">arrow_outward</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- SECTION 6: SPLIT SECTION ON DARK NAVY BACKGROUND -->
+            <section class="w-full bg-primary-container text-on-primary py-24 relative overflow-hidden" id="contact">
+                <!-- Subtle Industrial SVG Watermark -->
+                <div class="absolute -right-20 -bottom-20 w-96 h-96 opacity-5 pointer-events-none">
+                    <svg class="w-full h-full text-on-primary" fill="currentColor" viewBox="0 0 200 200">
+                        <path
+                            d="M100 0 L120 40 L160 20 L160 70 L200 80 L180 120 L200 160 L150 160 L140 200 L100 180 L60 200 L50 160 L0 160 L20 120 L0 80 L40 70 L40 20 L80 40 Z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="max-w-7xl mx-auto px-6 relative z-10">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+                        <!-- Left Column: Copy & Direct Contact Matrix -->
+                        <div class="lg:col-span-6 flex flex-col gap-8">
+                            <div class="flex flex-col gap-3">
+                                <div
+                                    class="inline-flex items-center gap-2 px-3 py-1 rounded bg-surface-container-lowest/10 w-fit">
+                                    <span class="w-2 h-2 rounded-full bg-on-tertiary-container"></span>
+                                    <span
+                                        class="font-label-caps text-label-caps text-tertiary-fixed tracking-wider uppercase">Project
+                                        Coordination</span>
+                                </div>
+                                <h2
+                                    class="font-display-mobile sm:font-display text-display-mobile sm:text-display font-extrabold text-on-primary tracking-tight">
+                                    Have An Upcoming Project? Let's Talk Now!
+                                </h2>
+                                <p class="font-body-lg text-body-lg text-primary-fixed leading-relaxed">
+                                    Our technical procurement specialists, estimation engineers, and operations managers
+                                    in Jubail stand ready to review your RFPs and schedule immediate site evaluations.
+                                </p>
+                            </div>
+                            <!-- Rapid Mobilization Badge -->
+                            <div
+                                class="p-4 rounded-xl bg-surface-container-lowest/10 backdrop-blur-md flex items-center gap-4">
+                                <div
+                                    class="w-12 h-12 rounded-xl bg-on-tertiary-container flex items-center justify-center shrink-0">
+                                    <span class="material-symbols-outlined text-on-tertiary text-[26px]">flash_on</span>
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="font-title-md text-title-md text-on-primary font-bold">24/7 Rapid
+                                        Mobilization</span>
+                                    <span class="font-body-sm text-body-sm text-primary-fixed-dim">Emergency industrial
+                                        support &amp; turnaround crew deployments across the Eastern Province.</span>
+                                </div>
+                            </div>
+                            <!-- Contact Data Cards -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div
+                                    class="p-5 rounded-xl bg-surface-container-lowest/5 backdrop-blur-sm flex flex-col gap-2">
+                                    <span
+                                        class="material-symbols-outlined text-on-tertiary-container text-[24px]">phone_in_talk</span>
+                                    <span
+                                        class="font-label-caps text-label-caps text-primary-fixed-dim uppercase">Direct
+                                        Phone Line</span>
+                                    <span class="font-title-md text-title-md text-on-primary font-semibold">+966 13 361
+                                        8899</span>
+                                    <span class="font-body-sm text-body-sm text-primary-fixed-dim">+966 50 123
+                                        4567</span>
+                                </div>
+                                <div
+                                    class="p-5 rounded-xl bg-surface-container-lowest/5 backdrop-blur-sm flex flex-col gap-2">
+                                    <span
+                                        class="material-symbols-outlined text-on-tertiary-container text-[24px]">forward_to_inbox</span>
+                                    <span
+                                        class="font-label-caps text-label-caps text-primary-fixed-dim uppercase">Commercial
+                                        Inquiries</span>
+                                    <span
+                                        class="font-title-md text-title-md text-on-primary font-semibold truncate">projects@samplesolution.com.sa</span>
+                                    <span
+                                        class="font-body-sm text-body-sm text-primary-fixed-dim">rfp@samplesolution.com.sa</span>
+                                </div>
+                            </div>
+                            <div
+                                class="p-5 rounded-xl bg-surface-container-lowest/5 backdrop-blur-sm flex items-start gap-3">
+                                <span
+                                    class="material-symbols-outlined text-on-tertiary-container text-[24px] shrink-0 mt-0.5">location_on</span>
+                                <div class="flex flex-col">
+                                    <span class="font-title-md text-title-md text-on-primary font-bold">Jubail
+                                        Operations Center</span>
+                                    <span class="font-body-sm text-body-sm text-primary-fixed">Support Industries Area
+                                        1, Road 118, Jubail Industrial City, Kingdom of Saudi Arabia</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Right Column: Contrast White RFP Form -->
+                        <div class="lg:col-span-6">
+                            <div class="bg-surface-container-lowest rounded-xl p-8 sm:p-10 shadow-2xl text-on-surface">
+                                <div class="flex flex-col gap-2 pb-6">
+                                    <h3 class="font-headline-sm text-headline-sm text-primary-container font-extrabold">
+                                        Request A Quote</h3>
+                                    <p class="font-body-sm text-body-sm text-on-surface-variant">
+                                        Submit project details for rapid engineering evaluation and commercial
+                                        estimation.
+                                    </p>
+                                </div>
+                                <form class="flex flex-col gap-4"
+                                    onsubmit="event.preventDefault(); alert('Inquiry submitted successfully. A Jubail estimation lead will reach out within 4 business hours.');">
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                        <div class="flex flex-col gap-1.5">
+                                            <label
+                                                class="font-label-caps text-label-caps text-on-surface-variant uppercase">Full
+                                                Name</label>
+                                            <input
+                                                class="h-11 px-4 rounded bg-surface-container-lowest font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant/50 focus:bg-surface-container-low focus:outline-none"
+                                                placeholder="Eng. Fahad Al-Qahtani" required="" type="text">
+                                        </div>
+                                        <div class="flex flex-col gap-1.5">
+                                            <label
+                                                class="font-label-caps text-label-caps text-on-surface-variant uppercase">Corporate
+                                                Email</label>
+                                            <input
+                                                class="h-11 px-4 rounded bg-surface-container-lowest font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant/50 focus:bg-surface-container-low focus:outline-none"
+                                                placeholder="name@company.com.sa" required="" type="email">
+                                        </div>
+                                    </div>
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                        <div class="flex flex-col gap-1.5">
+                                            <label
+                                                class="font-label-caps text-label-caps text-on-surface-variant uppercase">Phone
+                                                Number</label>
+                                            <input
+                                                class="h-11 px-4 rounded bg-surface-container-lowest font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant/50 focus:bg-surface-container-low focus:outline-none"
+                                                placeholder="+966 5X XXX XXXX" required="" type="tel">
+                                        </div>
+                                        <div class="flex flex-col gap-1.5">
+                                            <label
+                                                class="font-label-caps text-label-caps text-on-surface-variant uppercase">Service
+                                                Required</label>
+                                            <select
+                                                class="h-11 px-4 rounded bg-surface-container-lowest font-body-md text-body-md text-on-surface focus:bg-surface-container-low focus:outline-none">
+                                                <option value="mep">MEP Contracting &amp; Piping</option>
+                                                <option value="construction">General Construction &amp; Civil</option>
+                                                <option value="waste">Waste Management &amp; Remediation</option>
+                                                <option value="support">Industrial Support Services</option>
+                                                <option value="logistics">Transportation &amp; Heavy Fleet</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col gap-1.5">
+                                        <label
+                                            class="font-label-caps text-label-caps text-on-surface-variant uppercase">Project
+                                            Location / Jubail Area</label>
+                                        <input
+                                            class="h-11 px-4 rounded bg-surface-container-lowest font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant/50 focus:bg-surface-container-low focus:outline-none"
+                                            placeholder="e.g., Jubail 2, Ras Al-Khair, Tanajib, Royal Commission Area"
+                                            type="text">
+                                    </div>
+                                    <div class="flex flex-col gap-1.5">
+                                        <label
+                                            class="font-label-caps text-label-caps text-on-surface-variant uppercase">Message
+                                            &amp; Scope Overview</label>
+                                        <textarea
+                                            class="p-4 rounded bg-surface-container-lowest font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant/50 focus:bg-surface-container-low focus:outline-none resize-none"
+                                            placeholder="Provide preliminary project scope, estimated schedule, or procurement specifications..."
+                                            rows="3"></textarea>
+                                    </div>
+                                    <button
+                                        class="w-full py-3.5 px-6 rounded bg-on-tertiary-container hover:bg-tertiary-fixed-dim text-on-tertiary font-title-md text-title-md font-bold shadow-lg transition-transform hover:-translate-y-0.5 mt-2 flex items-center justify-center gap-2"
+                                        type="submit">
+                                        <span class="">Send Message &amp; Request Quote</span>
+                                        <span class="material-symbols-outlined text-[20px]">send</span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- SECTION 7: CLIENT & PARTNER LOGO STRIP -->
+            <section class="w-full bg-surface-container-low py-16">
+                <div class="max-w-7xl mx-auto px-6">
+                    <div class="flex flex-col items-center gap-8">
+                        <span
+                            class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest text-center">
+                            Trusted by Leading Industrial Corporations Across the Kingdom
+                        </span>
+                        <!-- Partner Badges Grid -->
+                        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 w-full">
+                            <!-- Aramco -->
+                            <div
+                                class="p-4 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col items-center justify-center text-center gap-1 group">
+                                <span
+                                    class="material-symbols-outlined text-[32px] text-on-surface-variant group-hover:text-on-tertiary-container transition-colors">oil_barrel</span>
+                                <span class="font-title-md text-title-md text-primary-container font-bold">SAUDI
+                                    ARAMCO</span>
+                                <span class="font-label-code text-[10px] text-on-surface-variant uppercase">Approved
+                                    Vendor</span>
+                            </div>
+                            <!-- SABIC -->
+                            <div
+                                class="p-4 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col items-center justify-center text-center gap-1 group">
+                                <span
+                                    class="material-symbols-outlined text-[32px] text-on-surface-variant group-hover:text-on-tertiary-container transition-colors">science</span>
+                                <span class="font-title-md text-title-md text-primary-container font-bold">SABIC</span>
+                                <span class="font-label-code text-[10px] text-on-surface-variant uppercase">Partner
+                                    Network</span>
+                            </div>
+                            <!-- Royal Commission -->
+                            <div
+                                class="p-4 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col items-center justify-center text-center gap-1 group">
+                                <span
+                                    class="material-symbols-outlined text-[32px] text-on-surface-variant group-hover:text-on-tertiary-container transition-colors">account_balance</span>
+                                <span class="font-title-md text-title-md text-primary-container font-bold">ROYAL
+                                    COMM.</span>
+                                <span class="font-label-code text-[10px] text-on-surface-variant uppercase">RCJY
+                                    Contractor</span>
+                            </div>
+                            <!-- Ma'aden -->
+                            <div
+                                class="p-4 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col items-center justify-center text-center gap-1 group">
+                                <span
+                                    class="material-symbols-outlined text-[32px] text-on-surface-variant group-hover:text-on-tertiary-container transition-colors">diamond</span>
+                                <span
+                                    class="font-title-md text-title-md text-primary-container font-bold">MA'ADEN</span>
+                                <span class="font-label-code text-[10px] text-on-surface-variant uppercase">Industrial
+                                    Support</span>
+                            </div>
+                            <!-- Sadara -->
+                            <div
+                                class="p-4 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col items-center justify-center text-center gap-1 group">
+                                <span
+                                    class="material-symbols-outlined text-[32px] text-on-surface-variant group-hover:text-on-tertiary-container transition-colors">factory</span>
+                                <span class="font-title-md text-title-md text-primary-container font-bold">SADARA</span>
+                                <span class="font-label-code text-[10px] text-on-surface-variant uppercase">Petrochem
+                                    Vendor</span>
+                            </div>
+                            <!-- Petro Rabigh -->
+                            <div
+                                class="p-4 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col items-center justify-center text-center gap-1 group">
+                                <span
+                                    class="material-symbols-outlined text-[32px] text-on-surface-variant group-hover:text-on-tertiary-container transition-colors">local_gas_station</span>
+                                <span class="font-title-md text-title-md text-primary-container font-bold">PETRO
+                                    RABIGH</span>
+                                <span class="font-label-code text-[10px] text-on-surface-variant uppercase">Refining
+                                    Services</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Interactive JavaScript for micro-interactions -->
+            <script>
+                (function () {
+                    // Hero Slider indicator interaction
+                    const heroButtons = document.querySelectorAll('#hero-slider-indicators button');
+                    heroButtons.forEach((btn, index) => {
+                        btn.addEventListener('click', () => {
+                            heroButtons.forEach(b => {
+                                b.classList.remove('w-10', 'bg-on-tertiary-container');
+                                b.classList.add('w-2.5', 'bg-surface-container-highest/40');
+                            });
+                            btn.classList.remove('w-2.5', 'bg-surface-container-highest/40');
+                            btn.classList.add('w-10', 'bg-on-tertiary-container');
+                        });
+                    });
+
+                    // Filter tabs interaction in Projects Gallery
+                    const filterButtons = document.querySelectorAll('#projects button');
+                    filterButtons.forEach(btn => {
+                        btn.addEventListener('click', () => {
+                            filterButtons.forEach(b => {
+                                b.classList.remove('bg-primary-container', 'text-on-primary');
+                                b.classList.add('bg-surface-container', 'text-on-surface-variant');
+                            });
+                            btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+                            btn.classList.add('bg-primary-container', 'text-on-primary');
+                        });
+                    });
+                })();
+            </script>
+        </div>
+    </main>
+    <footer
+        class="w-full bg-primary text-inverse-on-surface border-t border-outline-variant/20 pt-space-xl pb-space-lg">
+        <div class="max-w-7xl mx-auto px-6">
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl pb-space-xl border-b border-outline-variant/20">
+                <div class="flex flex-col gap-space-md">
+                    <div class="flex items-center gap-space-sm">
+                        <div class="w-9 h-9 rounded-lg bg-surface-container-lowest/10 flex items-center justify-center">
+                            <span
+                                class="material-symbols-outlined text-on-tertiary-container text-[24px]">apartment</span>
+                        </div>
+                        <div class="flex flex-col"><span
+                                class="font-headline-sm text-headline-sm text-on-tertiary">Sample Solution</span><span
+                                class="font-label-caps text-label-caps text-secondary-fixed">Jubail Industrial
+                                City</span></div>
+                    </div>
+                    <p class="font-body-sm text-body-sm text-surface-container">Leading industrial contractor delivering
+                        comprehensive EPC support, maintenance, technical staffing, and heavy fleet solutions in Jubail
+                        and the Eastern Province.</p>
+                    <div class="flex items-center gap-space-xs font-label-caps text-label-caps"><span
+                            class="px-2 py-1 rounded bg-surface-container-high/20 border border-outline-variant/40 text-surface-bright">ISO
+                            9001:2015</span><span
+                            class="px-2 py-1 rounded bg-surface-container-high/20 border border-outline-variant/40 text-surface-bright">ISO
+                            45001</span><span
+                            class="px-2 py-1 rounded bg-surface-container-high/20 border border-outline-variant/40 text-on-tertiary-container">ARAMCO
+                            VENDOR</span></div>
+                    <div class="font-body-sm text-body-sm text-surface-container flex flex-col gap-1"><span
+                            class="flex items-center gap-space-xs"><span
+                                class="material-symbols-outlined text-[16px] text-on-tertiary-container">call</span>+966
+                            13 361 XXXX</span><span class="flex items-center gap-space-xs"><span
+                                class="material-symbols-outlined text-[16px] text-on-tertiary-container">mail</span>info@samplesolution.com.sa</span>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-space-sm"><span
+                        class="font-title-md text-title-md text-on-tertiary border-b border-on-tertiary-container pb-1 inline-block w-fit">Our
+                        Company</span>
+                    <nav class="flex flex-col gap-2 font-body-sm text-body-sm"><a
+                            class="text-surface-container hover:text-on-tertiary hover:underline transition-colors"
+                            data-path="about-us" href="#">About Us</a><a
+                            class="text-surface-container hover:text-on-tertiary hover:underline transition-colors"
+                            data-path="vision-and-mission" href="#">Vision &amp; Mission</a><a
+                            class="text-surface-container hover:text-on-tertiary hover:underline transition-colors"
+                            data-path="leadership" href="#">Leadership</a><a
+                            class="text-surface-container hover:text-on-tertiary hover:underline transition-colors"
+                            data-path="safety-policy" href="#">Safety Policy</a><a
+                            class="text-surface-container hover:text-on-tertiary hover:underline transition-colors"
+                            data-path="quality-policy" href="#">Quality Policy</a><a
+                            class="text-surface-container hover:text-on-tertiary hover:underline transition-colors"
+                            data-path="careers" href="#">Careers</a></nav>
+                </div>
+                <div class="flex flex-col gap-space-sm"><span
+                        class="font-title-md text-title-md text-on-tertiary border-b border-on-tertiary-container pb-1 inline-block w-fit">Our
+                        Services</span>
+                    <nav class="flex flex-col gap-2 font-body-sm text-body-sm"><a
+                            class="text-surface-container hover:text-on-tertiary hover:underline transition-colors"
+                            data-path="mep-contracting" href="#">MEP Contracting</a><a
+                            class="text-surface-container hover:text-on-tertiary hover:underline transition-colors"
+                            data-path="general-construction" href="#">General Construction</a><a
+                            class="text-surface-container hover:text-on-tertiary hover:underline transition-colors"
+                            data-path="waste-management" href="#">Waste Management &amp; Remediation</a><a
+                            class="text-surface-container hover:text-on-tertiary hover:underline transition-colors"
+                            data-path="support-services" href="#">Industrial Support Services</a><a
+                            class="text-surface-container hover:text-on-tertiary hover:underline transition-colors"
+                            data-path="transportation" href="#">Logistics &amp; Transportation</a></nav>
+                </div>
+                <div class="flex flex-col gap-space-sm"><span
+                        class="font-title-md text-title-md text-on-tertiary border-b border-on-tertiary-container pb-1 inline-block w-fit">Quick
+                        Links &amp; Contact</span>
+                    <nav class="flex flex-col gap-2 font-body-sm text-body-sm"><a
+                            class="text-surface-container hover:text-on-tertiary hover:underline transition-colors"
+                            data-path="projects" href="#">Projects Gallery</a><a
+                            class="text-surface-container hover:text-on-tertiary hover:underline transition-colors"
+                            data-path="clients" href="#">Client List</a><a
+                            class="text-surface-container hover:text-on-tertiary hover:underline transition-colors"
+                            data-path="equipment-fleet" href="#">Resources &amp; Fleet</a><a
+                            class="text-surface-container hover:text-on-tertiary hover:underline transition-colors"
+                            data-path="contact-us" href="#">Jubail Office Location</a><a
+                            class="text-surface-container hover:text-on-tertiary hover:underline transition-colors"
+                            data-path="quote-request" href="#">Direct Inquiry / RFP</a></nav>
+                    <div class="mt-2"><span
+                            class="font-label-caps text-label-caps text-secondary-fixed block mb-1">Industry
+                            Newsletter</span>
+                        <div class="flex items-center gap-1"><input
+                                class="h-8 px-2 font-body-sm text-body-sm bg-surface-container-lowest/10 border border-outline-variant/40 rounded text-on-tertiary placeholder-surface-container/60 focus:outline-none focus:border-on-tertiary-container w-full"
+                                placeholder="Business Email" type="email"><button
+                                class="h-8 px-3 rounded bg-on-tertiary-container text-on-tertiary font-label-code text-label-code hover:bg-tertiary-fixed-dim transition-colors">Join</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm font-label-code text-label-code text-surface-container">
+                <p class="">© 2025 Sample Solution Contracting &amp; Services Ltd. All Rights Reserved. | Jubail
+                    Industrial City, KSA</p>
+                <div class="flex items-center gap-space-md"><a
+                        class="hover:text-on-tertiary hover:underline transition-colors" data-path="privacy-policy"
+                        href="#">Privacy Policy</a><a class="hover:text-on-tertiary hover:underline transition-colors"
+                        data-path="terms-of-service" href="#">Terms of Service</a></div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
