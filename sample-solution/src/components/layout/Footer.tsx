@@ -50,7 +50,7 @@ export default function Footer() {
 
   return (
     <footer className="w-full bg-primary text-inverse-on-surface border-t" style={{ borderColor: "rgba(116,119,127,0.2)" }}>
-      <div className="section-container pt-8 md:pt-12 pb-4 md:pb-6">
+      <div className="section-container pt-14 md:pt-20 lg:pt-24 pb-6 md:pb-8">
 
         {/* Mobile: Brand block top, full-width */}
         <div className="flex flex-col gap-4 pb-5 border-b md:hidden" style={{ borderColor: "rgba(116,119,127,0.2)" }}>
@@ -226,7 +226,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="pt-5 pb-20 md:pb-4 flex flex-col md:flex-row items-center justify-between gap-3 text-label-code text-center" style={{ color: "var(--color-surface-container)" }}>
+        <div className="pt-6 md:pt-8 pb-20 md:pb-6 flex flex-col md:flex-row items-center justify-between gap-3 text-label-code text-center" style={{ color: "var(--color-surface-container)" }}>
           <p className="w-full md:w-auto md:text-left text-[11px] md:text-[12px]">
             © {year} Sample Solution Contracting &amp; Services Ltd. All Rights Reserved. | Jubail Industrial City, KSA
           </p>

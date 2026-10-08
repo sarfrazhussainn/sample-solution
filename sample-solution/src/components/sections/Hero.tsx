@@ -83,7 +83,7 @@ export default function Hero() {
               </span>
             </div>
 
-            <h1 className="text-[26px] leading-[32px] sm:text-display-mobile md:text-display text-on-primary font-extrabold tracking-tight">
+            <h1 className="text-[26px] leading-[38px] sm:text-display-mobile sm:leading-[48px] md:text-display md:leading-[68px] lg:leading-[72px] text-on-primary font-extrabold tracking-tight">
               Engineering Excellence &amp; Contracting Solutions for Saudi Industry
             </h1>
             

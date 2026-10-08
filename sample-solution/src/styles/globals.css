@@ -120,14 +120,14 @@ body {
 /* ===== Typography helpers ===== */
 .text-display {
   font-size: 52px;
-  line-height: 60px;
-  letter-spacing: -0.03em;
+  line-height: 68px;
+  letter-spacing: -0.02em;
   font-weight: 800;
 }
 
 .text-display-mobile {
   font-size: 36px;
-  line-height: 44px;
+  line-height: 48px;
   letter-spacing: -0.02em;
   font-weight: 800;
 }
