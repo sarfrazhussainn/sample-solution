@@ -45,8 +45,8 @@ export default function Hero() {
   }, [emblaApi]);
 
   return (
-    <section className="relative w-full overflow-hidden bg-primary pt-[120px]">
-      <div className="relative w-full min-h-[780px] lg:min-h-[860px] flex items-center">
+    <section className="relative w-full overflow-hidden bg-primary pt-[100px] sm:pt-[120px]">
+      <div className="relative w-full min-h-[560px] sm:min-h-[680px] lg:min-h-[840px] flex items-center">
         {/* Embla Viewport */}
         <div className="absolute inset-0 overflow-hidden" ref={emblaRef}>
           <div className="flex w-full h-full">
@@ -73,8 +73,8 @@ export default function Hero() {
         </div>
 
         {/* Content Overlay */}
-        <div className="relative z-10 section-container py-20 w-full pointer-events-none">
-          <div className="max-w-3xl flex flex-col gap-6 pointer-events-auto">
+        <div className="relative z-10 section-container py-8 sm:py-20 w-full pointer-events-none">
+          <div className="max-w-3xl flex flex-col gap-4 sm:gap-6 pointer-events-auto">
             {/* Tagline */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full w-fit" style={{ background: "rgba(211,116,7,0.2)", backdropFilter: "blur(12px)" }}>
               <span className="w-2 h-2 rounded-full bg-on-tertiary-container animate-pulse" />

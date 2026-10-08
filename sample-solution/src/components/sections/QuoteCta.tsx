@@ -5,7 +5,7 @@ import Reveal from "../ui/Reveal";
 
 export default function QuoteCta() {
   return (
-    <section className="w-full bg-primary-container text-on-primary py-24 relative overflow-hidden" id="contact">
+    <section className="w-full bg-primary-container text-on-primary py-14 md:py-24 relative overflow-hidden" id="contact">
       {/* Watermark */}
       <div className="absolute -right-20 -bottom-20 w-96 h-96 opacity-5 pointer-events-none">
         <svg className="w-full h-full text-on-primary" fill="currentColor" viewBox="0 0 200 200">
@@ -14,7 +14,7 @@ export default function QuoteCta() {
       </div>
 
       <div className="section-container relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
           
           {/* Left Column */}
           <div className="lg:col-span-6 flex flex-col gap-8">
