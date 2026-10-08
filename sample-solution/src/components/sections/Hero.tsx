@@ -45,8 +45,8 @@ export default function Hero() {
   }, [emblaApi]);
 
   return (
-    <section className="relative w-full overflow-hidden bg-primary pt-[120px]">
-      <div className="relative w-full min-h-[780px] lg:min-h-[860px] flex items-center">
+    <section className="relative w-full overflow-hidden bg-primary pt-[100px] md:pt-[120px]">
+      <div className="relative w-full min-h-[540px] md:min-h-[780px] lg:min-h-[860px] flex items-center">
         {/* Embla Viewport */}
         <div className="absolute inset-0 overflow-hidden" ref={emblaRef}>
           <div className="flex w-full h-full">
@@ -73,22 +73,25 @@ export default function Hero() {
         </div>
 
         {/* Content Overlay */}
-        <div className="relative z-10 section-container py-20 w-full pointer-events-none">
-          <div className="max-w-3xl flex flex-col gap-6 pointer-events-auto">
+        <div className="relative z-10 section-container py-10 md:py-20 w-full pointer-events-none">
+          <div className="max-w-3xl flex flex-col gap-4 md:gap-6 pointer-events-auto">
             {/* Tagline */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full w-fit" style={{ background: "rgba(211,116,7,0.2)", backdropFilter: "blur(12px)" }}>
-              <span className="w-2 h-2 rounded-full bg-on-tertiary-container animate-pulse" />
-              <span className="text-label-caps text-tertiary-fixed">
+            <div className="inline-flex items-center gap-2 px-3 py-1 md:px-3.5 md:py-1.5 rounded-full w-fit" style={{ background: "rgba(211,116,7,0.2)", backdropFilter: "blur(12px)" }}>
+              <span className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-on-tertiary-container animate-pulse" />
+              <span className="text-label-caps text-tertiary-fixed text-[10px] md:text-[11px]">
                 Leading Industrial Contractor in Jubail, Saudi Arabia
               </span>
             </div>
 
-            <h1 className="text-display-mobile sm:text-display text-on-primary">
-              Engineering Excellence &amp; Comprehensive Contracting Solutions for Saudi Industry
+            <h1 className="text-[26px] leading-[32px] sm:text-display-mobile md:text-display text-on-primary font-extrabold tracking-tight">
+              Engineering Excellence &amp; Contracting Solutions for Saudi Industry
             </h1>
             
-            <p className="text-body-lg text-primary-fixed max-w-2xl">
+            <p className="text-body-md md:text-body-lg text-primary-fixed max-w-2xl hidden sm:block">
               Delivering turnkey MEP contracting, heavy industrial construction, certified waste management, technical support, and logistics across Jubail Industrial City and the Eastern Province.
+            </p>
+            <p className="text-body-sm text-primary-fixed sm:hidden">
+              MEP · Construction · Waste Management · Support Services · Logistics — Jubail, KSA
             </p>
 
             <div className="flex flex-wrap items-center gap-4 pt-2">
@@ -101,7 +104,7 @@ export default function Hero() {
             </div>
 
             {/* Slider Controls */}
-            <div className="pt-8 flex items-center gap-6">
+            <div className="pt-4 md:pt-8 flex items-center gap-6">
               <div className="flex items-center gap-2">
                 {slides.map((_, idx) => (
                   <button

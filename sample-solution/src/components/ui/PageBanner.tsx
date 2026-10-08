@@ -36,7 +36,7 @@ export default function PageBanner({ title, subtitle, breadcrumbs, image = "/ima
       </div>
 
       {/* Content */}
-      <div className="relative z-10 section-container py-20 md:py-24 flex flex-col gap-4 mt-[120px]">
+      <div className="relative z-10 section-container py-10 md:py-24 flex flex-col gap-4 mt-[100px] md:mt-[120px]">
         {/* Breadcrumbs */}
         {breadcrumbs && (
           <nav aria-label="Breadcrumb">
@@ -56,9 +56,9 @@ export default function PageBanner({ title, subtitle, breadcrumbs, image = "/ima
             </ol>
           </nav>
         )}
-        <h1 className="text-headline-lg md:text-display text-on-primary max-w-3xl">{title}</h1>
+        <h1 className="text-headline-md md:text-headline-lg lg:text-display text-on-primary max-w-3xl">{title}</h1>
         {subtitle && (
-          <p className="text-body-lg text-primary-fixed max-w-2xl">{subtitle}</p>
+          <p className="text-body-md md:text-body-lg text-primary-fixed max-w-2xl">{subtitle}</p>
         )}
       </div>
     </section>
