@@ -5,14 +5,14 @@ import Button from "../ui/Button";
 
 export default function About() {
   return (
-    <section className="w-full bg-surface-container-lowest py-16 md:py-24" id="about">
+    <section className="w-full bg-surface-container-lowest py-24" id="about">
       <div className="section-container">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
           {/* Visual Column */}
           <div className="lg:col-span-5 relative">
             <Reveal direction="left">
-              <div className="relative w-full h-[320px] sm:h-[440px] lg:h-[500px]">
+              <div className="relative w-full h-[460px] sm:h-[500px]">
                 {/* Primary Image */}
                 <div className="absolute top-0 left-0 w-4/5 h-4/5 rounded-xl overflow-hidden shadow-lg">
                   <Image
